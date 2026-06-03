@@ -13,11 +13,11 @@ export default function LoginPage() {
 
       {/* Partners & accreditations bar — full width below the hero/login split */}
       <section className="w-full bg-white border-t border-border-divider">
-        <div className="max-w-[1728px] mx-auto px-14 py-6">
+        <div className="max-w-[1728px] mx-auto px-4 py-5 lg:px-14 lg:py-6">
           <AirlinePartners />
         </div>
         <div className="border-t border-border-divider" />
-        <div className="max-w-[1728px] mx-auto px-14 py-6">
+        <div className="max-w-[1728px] mx-auto px-4 py-5 lg:px-14 lg:py-6">
           <Accreditations />
         </div>
       </section>

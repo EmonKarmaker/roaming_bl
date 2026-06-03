@@ -13,7 +13,7 @@ export default function HeroPanel() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col min-h-[400px] pl-14 pr-12 pt-11 pb-12">
+      <div className="relative z-10 flex flex-col min-h-[220px] lg:min-h-0 px-5 pt-7 pb-8 lg:pl-14 lg:pr-12 lg:pt-11 lg:pb-12">
         {/* Logo */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -21,15 +21,15 @@ export default function HeroPanel() {
           alt="Roaming Bangladesh"
           width={210}
           height={66}
-          className="w-[210px] h-auto"
+          className="w-[150px] lg:w-[210px] h-auto"
         />
         {/* Tagline */}
-        <p className="text-[13px] font-medium text-white uppercase tracking-[0.1em] mt-[14px]">
+        <p className="text-[11px] lg:text-[13px] font-medium text-white uppercase tracking-[0.1em] mt-[8px] lg:mt-[14px]">
           B2B Travel Marketplace
         </p>
 
-        {/* ~40px gap, then headline + subtext + features */}
-        <div className="mt-10 max-w-[420px]">
+        {/* Headline + subtext + features — desktop only */}
+        <div className="hidden lg:block mt-10 max-w-[420px]">
           <h1 className="text-[36px] font-bold text-white leading-[1.15] mb-[14px] max-w-[440px]">
             Your Trusted Travel Business Partner
           </h1>

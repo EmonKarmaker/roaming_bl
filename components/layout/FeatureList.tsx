@@ -38,9 +38,9 @@ export default function FeatureList() {
             height={56}
             className="flex-shrink-0 w-[56px] h-[56px]"
           />
-          <div className="flex flex-col gap-1">
-            <span className="text-[18px] font-bold text-white leading-snug">{f.title}</span>
-            <span className="text-[14px] font-normal text-white/75 leading-relaxed max-w-[200px]">{f.description}</span>
+          <div>
+            <p className="text-[18px] font-bold text-white leading-snug mb-1">{f.title}</p>
+            <p className="text-[14px] font-normal text-white/75 leading-snug max-w-[200px]">{f.description}</p>
           </div>
         </li>
       ))}

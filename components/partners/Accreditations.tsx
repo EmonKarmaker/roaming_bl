@@ -9,8 +9,8 @@ const accreditations = [
 
 export default function Accreditations() {
   return (
-    <div className="flex items-center w-full">
-      <div className="whitespace-nowrap w-[200px] flex-shrink-0">
+    <div className="flex flex-col sm:flex-row sm:items-center w-full gap-4 sm:gap-6">
+      <div className="whitespace-nowrap sm:w-[200px] sm:flex-shrink-0">
         <span className="text-[9px] font-semibold tracking-widest uppercase text-ink-heading leading-tight block">
           Our Accreditations
         </span>
@@ -18,14 +18,14 @@ export default function Accreditations() {
           &amp; Licences
         </span>
       </div>
-      <div className="flex-1 flex items-center justify-between">
+      <div className="flex items-center flex-wrap gap-x-8 gap-y-4 sm:flex-1 sm:justify-between sm:flex-nowrap">
         {accreditations.map((a) => (
           // eslint-disable-next-line @next/next/no-img-element
           <img
             key={a.src}
             src={a.src}
             alt={a.alt}
-            className="h-[50px] w-auto object-contain"
+            className="h-[44px] w-auto object-contain"
           />
         ))}
       </div>
