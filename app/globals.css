@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@source "../components/**/*.{ts,tsx}";
+@source "../app/**/*.{ts,tsx}";
+
+@theme {
+  /* Brand */
+  --color-brand-primary:  #371A9A;
+  --color-brand-button:   #040264;
+  --color-brand-deepest:  #022359;
+
+  /* Surface */
+  --color-surface-input:  #FBFBFB;
+
+  /* Border tokens */
+  --color-border-input:   #DED9EA;
+  --color-border-divider: #DED9EA;
+  --color-border-tab:     #DED9EA;
+
+  /* Ink (text) */
+  --color-ink-heading:    #3B2963;
+  --color-ink-body:       #5B4198;
+  --color-ink-muted:      #9991B3;
+  --color-ink-link:       #3B2963;
+
+  /* Font */
+  --font-sans: var(--font-archivo), system-ui, sans-serif;
+
+  /* Border radius */
+  --radius-input: 8px;
+  --radius-btn:   8px;
+  --radius-icon:  10px;
+  --radius-pill:  20px;
+  --radius-card:  16px;
+
+  /* Component heights */
+  --height-input:  56px;
+  --height-btn-lg: 60px;
+
+  /* Max widths */
+  --max-width-login-card: 747px;
+  --max-width-hero:       982px;
+}
