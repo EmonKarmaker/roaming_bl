@@ -13,7 +13,7 @@ export default function HeroPanel() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col min-h-[220px] lg:min-h-0 px-5 pt-7 pb-8 lg:pl-14 lg:pr-12 lg:pt-11 lg:pb-12">
+      <div className="relative z-10 flex flex-col px-5 pt-7 pb-10 lg:pl-14 lg:pr-12 lg:pt-11 lg:pb-12">
         {/* Logo */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -28,12 +28,12 @@ export default function HeroPanel() {
           B2B Travel Marketplace
         </p>
 
-        {/* Headline + subtext + features — desktop only */}
-        <div className="hidden lg:block mt-10 max-w-[420px]">
-          <h1 className="text-[36px] font-bold text-white leading-[1.15] mb-[14px] max-w-[440px]">
+        {/* Headline + subtext + features — all screen sizes */}
+        <div className="mt-6 lg:mt-10 lg:max-w-[420px]">
+          <h1 className="text-[26px] lg:text-[36px] font-bold text-white leading-[1.15] mb-3 lg:mb-[14px]">
             Your Trusted Travel Business Partner
           </h1>
-          <p className="text-[15px] font-normal text-white/85 leading-[1.6] max-w-[340px] mb-9">
+          <p className="text-[14px] lg:text-[15px] font-normal text-white/85 leading-[1.6] mb-6 lg:max-w-[340px] lg:mb-9">
             One platform, endless possibilities. Flights, Hotels, Visa, Tours &amp; Umrah — all in one place.
           </p>
           <FeatureList />
