@@ -21,8 +21,9 @@ export default function LoginCard() {
         <LanguageSelector />
       </div>
 
-      {/* Card form area — top-anchored on desktop so SSO buttons are never pushed below fold */}
-      <div className="relative z-10 flex-1 flex items-start justify-center px-5 pb-8 lg:px-0 lg:pt-4">
+      {/* Card form area — centered on desktop so both tabs stay balanced (no bottom void);
+          top-anchored on mobile for the normal scrollable stack. */}
+      <div className="relative z-10 flex-1 flex items-start lg:items-center justify-center px-5 pb-8 lg:px-0 lg:pb-4">
         <div className="w-full max-w-login-card bg-white px-0 lg:px-12">
 
           {/* Heading */}
