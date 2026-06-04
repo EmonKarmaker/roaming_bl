@@ -16,7 +16,7 @@ const FormInput = forwardRef<HTMLInputElement, FormInputProps>(
     const inputType = isPassword ? (showPassword ? 'text' : 'password') : type
 
     return (
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-1.5">
         {label && (
           <label className="text-[13px] font-medium text-ink-heading">
             {label}

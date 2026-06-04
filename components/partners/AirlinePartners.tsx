@@ -9,7 +9,7 @@ const airlines = [
 export default function AirlinePartners() {
   return (
     <div className="flex flex-col sm:flex-row sm:items-center w-full gap-4 sm:gap-6">
-      <span className="text-[9px] font-semibold tracking-widest uppercase text-ink-heading whitespace-nowrap sm:w-[200px] sm:flex-shrink-0">
+      <span className="text-[11px] font-medium tracking-widest uppercase text-ink-heading whitespace-nowrap sm:w-[180px] sm:flex-shrink-0">
         Our Airline Partners
       </span>
       <div className="flex items-center flex-wrap gap-x-8 gap-y-4 sm:flex-1 sm:justify-between sm:flex-nowrap">
@@ -19,7 +19,7 @@ export default function AirlinePartners() {
             key={a.src}
             src={a.src}
             alt={a.alt}
-            className="h-9 w-auto object-contain"
+            className="h-9 lg:h-[26px] w-auto object-contain"
           />
         ))}
       </div>

@@ -22,7 +22,7 @@ export default function EmailLoginForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-4" noValidate>
+    <form onSubmit={handleSubmit} className="flex flex-col" noValidate>
       <FormInput
         label="Email Address"
         type="email"
@@ -32,17 +32,19 @@ export default function EmailLoginForm() {
         icon={<Mail size={16} />}
         required
       />
-      <FormInput
-        label="Password"
-        type="password"
-        name="password"
-        placeholder="············"
-        autoComplete="current-password"
-        icon={<Lock size={16} />}
-        required
-      />
+      <div className="mt-[14px]">
+        <FormInput
+          label="Password"
+          type="password"
+          name="password"
+          placeholder="············"
+          autoComplete="current-password"
+          icon={<Lock size={16} />}
+          required
+        />
+      </div>
 
-      <div className="flex items-center justify-between">
+      <div className="mt-3 flex items-center justify-between">
         <Checkbox id="remember-me" label="Remember me" />
         <a
           href="#"
@@ -53,12 +55,12 @@ export default function EmailLoginForm() {
       </div>
 
       {error && (
-        <p className="text-[12px] text-red-500 bg-red-50 border border-red-200 rounded-input px-3 py-2">
+        <p className="mt-3 text-[12px] text-red-500 bg-red-50 border border-red-200 rounded-input px-3 py-2">
           {error}
         </p>
       )}
 
-      <PrimaryButton type="submit" loading={loading}>
+      <PrimaryButton type="submit" loading={loading} className="mt-4">
         Sign In
       </PrimaryButton>
     </form>

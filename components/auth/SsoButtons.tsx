@@ -45,7 +45,7 @@ function SsoButton({ provider, label, icon }: SsoButtonProps) {
       type="button"
       onClick={handleClick}
       disabled={loading}
-      className="w-full sm:flex-1 h-btn-lg rounded-btn border border-border-input bg-white flex items-center justify-center gap-2.5 text-[15px] font-semibold text-ink-heading hover:bg-gray-50 disabled:opacity-60 transition-colors"
+      className="flex-1 min-w-0 h-12 rounded-btn border border-border-input bg-white flex items-center justify-center gap-2.5 text-[15px] font-semibold text-ink-heading hover:bg-gray-50 disabled:opacity-60 transition-colors"
     >
       {loading ? (
         <span className="h-4 w-4 rounded-full border-2 border-ink-muted/30 border-t-ink-body animate-spin" />
@@ -59,13 +59,13 @@ function SsoButton({ provider, label, icon }: SsoButtonProps) {
 
 export default function SsoButtons() {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-[14px]">
       <div className="flex items-center gap-3">
         <div className="flex-1 h-px bg-border-divider" />
         <span className="text-[12px] text-ink-muted whitespace-nowrap">Or continue with</span>
         <div className="flex-1 h-px bg-border-divider" />
       </div>
-      <div className="flex flex-col sm:flex-row gap-3">
+      <div className="flex flex-row gap-[14px]">
         <SsoButton provider="google"             label="Google"    icon={<GoogleIcon />}    />
         <SsoButton provider="microsoft-entra-id" label="Microsoft" icon={<MicrosoftIcon />} />
       </div>

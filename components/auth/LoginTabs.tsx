@@ -27,7 +27,7 @@ export default function LoginTabs({ active, onChange }: LoginTabsProps) {
           type="button"
           onClick={() => onChange(tab.id)}
           className={[
-            'py-3 text-[15px] font-medium flex items-center justify-center gap-2 transition-colors',
+            'py-2 text-[15px] font-medium flex items-center justify-center gap-2 transition-colors',
             active === tab.id
               ? 'text-ink-heading border-b-2 border-brand-primary -mb-px'
               : 'text-ink-muted hover:text-ink-body',

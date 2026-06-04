@@ -10,11 +10,11 @@ const accreditations = [
 export default function Accreditations() {
   return (
     <div className="flex flex-col sm:flex-row sm:items-center w-full gap-4 sm:gap-6">
-      <div className="whitespace-nowrap sm:w-[200px] sm:flex-shrink-0">
-        <span className="text-[9px] font-semibold tracking-widest uppercase text-ink-heading leading-tight block">
+      <div className="whitespace-nowrap sm:w-[180px] sm:flex-shrink-0">
+        <span className="text-[11px] font-medium tracking-widest uppercase text-ink-heading leading-tight block">
           Our Accreditations
         </span>
-        <span className="text-[9px] font-semibold tracking-widest uppercase text-ink-heading leading-tight block">
+        <span className="text-[11px] font-medium tracking-widest uppercase text-ink-heading leading-tight block">
           &amp; Licences
         </span>
       </div>
@@ -25,7 +25,7 @@ export default function Accreditations() {
             key={a.src}
             src={a.src}
             alt={a.alt}
-            className="h-[44px] w-auto object-contain"
+            className="h-[44px] lg:h-[26px] w-auto object-contain"
           />
         ))}
       </div>
